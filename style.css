@@ -1,0 +1,87 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css";
+body
+{
+    background : url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    font-family: 'Cominc Sans','Numans', sans-serif;
+    color:white;
+}
+.login-box
+{
+    width:300px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.login-box h1{
+    float: left;
+    font-size: 40px;
+    border-bottom: 6px solid;
+    margin-bottom:50px;
+    padding:13px 0;
+    color:white;
+}
+.textbox
+{
+    color:white;
+    width:100%;
+    overflow:hidden;
+    font-size:20px;
+    border-bottom:1px solid;
+    padding:10px 0;
+}
+.textbox i{
+    color:white;
+    width:26px;
+    float:left;
+    text-align:center;
+}
+.textbox input{
+    color:white;
+    outline:none;
+    border:none;
+    background:none;
+}
+#submit
+{
+    color:white;
+    font-weight: bold;
+    width:100%;
+    background: none;
+    border:1px solid;
+    padding:5px;
+}
+#lobutton
+{
+    position: absolute;
+    float:left;
+    right:0;
+}
+#cobutton
+{
+    position: absolute;
+    float:left;
+    right:0;   
+}
+#coLib
+{
+    text-align: center;
+    padding:5px;
+}
+table {border-spacing: 55px 7px;}
+table {margin-right: 100px}
+
+table {
+    border-collapse: collapse;
+    width:70%;
+}
+tr {
+    border-bottom: 1px solid rgb(168, 166, 166) ;
+}
+td,th{padding: 15px;}
+::placeholder { 
+    color: white; 
+} 
