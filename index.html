@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <title>ECE 9065 - Lab 2</title>
+        <meta charset="UTF-8">
+        <script type='text/javascript' src='script.js'></script>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+</head>
+<body>
+        <div id='mainpage'>
+                <div class="login-box">
+                        <h1>Library Login</h1>
+                        <div class="textbox">
+                        <p id="head"></p>
+                        <i class="fa fa-user" aria-hidden="true"></i>        
+                        <input type="text" placeholder="Username" id="name" />
+                        </div>
+                        <p id="p1"></p>
+                        <p id="p2"></p>
+                        <div class="textbox">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <input type="text" placeholder="Email Id" id="email" />
+                        </div>
+                        <p id="p3"></p>
+                        <div class="textbox">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <input type="text" placeholder="DOB" id="birth-year" />
+                        </div>
+                        <p id="p4"></p>
+                        <h3><input id="submit" type="submit" value="Login" onclick="return formValidation()" /></h3>
+                </div>
+        </div>
+        <div id='secondpage'>
+                <h1 style="text-align: center;"><u>LIBRARY</h1></u>
+                <nav>
+                        
+                       <b>User:</b> <p id="name2" style="display: inline;"></p>
+                        <p id="email2" style="display: inline;"></p>
+                        <p id="age" style="display: inline;"></p>
+                        <button id="lobutton" onclick="LogOut();" >LogOut</button>
+                        <br>
+                        <br>
+                       <div id='lanchan'>
+                        <b>Language:</b> <a href="#" onclick="changeLang(1)">[English&nbsp;</a>
+                                <a href="#" onclick="changeLang(2)">&nbsp;French]</a>
+                        </div>
+
+                </nav>
+                <center>
+                <h2 style="text-align: center;"><u>ITEMS AVAILABLE</h2></u>
+                <button id="cobutton" onclick="checkOutPage()"> Shopping Cart</button>
+                <button id="additembutton" onclick="addItem()">Add Item to List</button>
+                <table id="lib1">
+
+                </table>
+                </center>
+        </div>
+        <div id='checkoutpage'>
+                <h2 style="text-align: center;"> CHECKOUT LIST</h2>
+                <button id="backbutton" onclick="backToLibrary()">Back</button>
+                <table id='coLib'>
+
+                </table>
+                <button onclick="confirmPurchase()">Checkout</button>
+        </div>
+</body>
+
+</html>
