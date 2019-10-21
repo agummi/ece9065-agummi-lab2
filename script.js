@@ -65,7 +65,7 @@ function formValidation() {
             if (emailValidation(email)) {
                 if (yearValidation(yob)) {
                     if ((currentyear - yob.value > 18)) {
-                        ageFormat = '[Foo]';
+                        ageFormat = '[Adult]';
                     } else {
                         ageFormat = '[Child]';
                     }
